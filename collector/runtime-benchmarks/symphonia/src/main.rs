@@ -11,7 +11,7 @@ use symphonia::core::meta::MetadataOptions;
 fn main() {
     run_benchmark_group(|group| {
         group.register_benchmark("symphonia-probe", || {
-            let path = "D:\\Media\\Personal\\Jocul cu papusi.mp4";
+            let path = "/mnt/e/Media/Personal/Jocul cu papusi.mp4";
 
             // Open the media source.
             let src = std::fs::File::open(path).expect("failed to open media");
